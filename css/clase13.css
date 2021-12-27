@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white:#ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd982;
+    --sm: 1.4rem;
+    --md:1.6rem;
+    --lg:1.8rem;
+}
+html{
+    font-size: 62.5%
+}
+
+
+
+
+
+.my-order-container {
+    width: 310px;
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+    border-left: 1px solid var(--text-input-field);
+    padding-left: 10px;
+ }
+ 
+  .title{
+    font-size: var(--lg);
+    margin-bottom: 40px;
+}
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.shopping-cart img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+.shopping-cart p:nth-child(2){
+    color: var(--very-light-pink);
+    font-size: 1.6rem;
+    font-family: Quicksand;
+    line-height: 17px;
+    margin-left: 15px;
+
+
+}
+
+.shopping-cart p:nth-child(3){
+    font-size: var(--md);
+    font-weight: bold;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 19px;
+    color: #404040;
+
+}
+
+.my-order-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.order{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+
+}
+
+.order p:nth-child(1)
+{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.order p:nth-child(2)
+{
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #404040;
+    
+}
+
+.primary-button{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor:pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+@media (max-width:640px){
+    .my-order-container{
+        width: 100%;
+    }
+} 
